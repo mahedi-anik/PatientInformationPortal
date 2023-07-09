@@ -9608,23 +9608,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jaits\\.nuget\\packages\\": {},
+    "C:\\Users\\M_Anik\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PatientINdormationPortal\\PatientINdormationPortalUI\\PatientINdormationPortalUI.csproj",
+      "projectUniqueName": "E:\\PatientInformationPortal\\PatientINdormationPortalUI\\PatientINdormationPortalUI.csproj",
       "projectName": "PatientINdormationPortalUI",
-      "projectPath": "D:\\PatientINdormationPortal\\PatientINdormationPortalUI\\PatientINdormationPortalUI.csproj",
-      "packagesPath": "C:\\Users\\jaits\\.nuget\\packages\\",
-      "outputPath": "D:\\PatientINdormationPortal\\PatientINdormationPortalUI\\obj\\",
+      "projectPath": "E:\\PatientInformationPortal\\PatientINdormationPortalUI\\PatientINdormationPortalUI.csproj",
+      "packagesPath": "C:\\Users\\M_Anik\\.nuget\\packages\\",
+      "outputPath": "E:\\PatientInformationPortal\\PatientINdormationPortalUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jaits\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\M_Anik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9680,7 +9680,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

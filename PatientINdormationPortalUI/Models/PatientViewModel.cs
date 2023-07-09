@@ -14,7 +14,8 @@ namespace PatientInformationPortaUI.Models
         [DisplayName("Disease")]
         public int? DiseaseID { get; set; }
         [Required]
-        [DisplayName("Epilepsy")]
         public Epilepsy Epilepsy { get; set; }
+        public virtual ICollection<NCD_DetailsViewModel> NCD_Details { get; set; } = new List<NCD_DetailsViewModel>();
+        public virtual ICollection<Allergies_DetailsModelView> Allergies_Details { get; set; } = new List<Allergies_DetailsModelView>();
     }
 }

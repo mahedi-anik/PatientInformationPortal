@@ -31,7 +31,10 @@ namespace PatientInformationPortaUI.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            PatientViewModel patientViewModel = new PatientViewModel();
+            patientViewModel.Allergies_Details.Add(new Allergies_DetailsModelView() { PatientID = 1 });
+            patientViewModel.NCD_Details.Add(new NCD_DetailsViewModel() { PatientID = 1 });
+            return PartialView("_AddPatientPartialView", patientViewModel);
         }
         [HttpPost]
         public IActionResult Create(PatientViewModel model)

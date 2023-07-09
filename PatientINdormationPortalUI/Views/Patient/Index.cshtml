@@ -10,16 +10,13 @@
 
     <p>
     <!--<a asp-action="Create">Create New</a>-->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addPatient" onclick="addPatient()">
         Add New
     </button>
     </p>
-<table class="table table-bordered text-center">
+<table class="table table-bordered text-center" id="patientTable">
     <thead class="bg-secondary text-light">
         <tr>
-            <th>
-                PatientID
-            </th>
             <th>
                 PatientName
             </th>
@@ -59,3 +56,15 @@
     </div>
     </div>
 </div>
+<script>
+    function addPatient(){
+        $.ajax({
+            type:"Get",
+            url: "/Patient/Create",
+            success: function (result) {
+                $("#patientTable").html(result);
+                $("#addPatient").modal('show');
+            }
+        })
+    }
+</script>
