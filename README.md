@@ -1,2 +1,2 @@
-# PatientINdormationPortal
- PatientI Ndormation Portal
+# PatientInformationPortal
+ Patient Information Portal
