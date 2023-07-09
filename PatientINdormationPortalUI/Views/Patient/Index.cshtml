@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PatientInformationPortaUI.Models.PatientViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+        <h1 class="text-info text-center p-1 border-dark">Patient Information Portal</h1>
+
+    <p>
+    <!--<a asp-action="Create">Create New</a>-->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add New
+    </button>
+    </p>
+<table class="table table-bordered text-center">
+    <thead class="bg-secondary text-light">
+        <tr>
+            <th>
+                PatientID
+            </th>
+            <th>
+                PatientName
+            </th>
+            <th>
+                Disease
+            </th>
+            <th>
+                Epilepsy
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiseaseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Epilepsy)
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Edit</a>
+                <a class="btn btn-warning" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Details</a>
+                <a class="btn btn-danger" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </div>
+    </div>
+</div>
