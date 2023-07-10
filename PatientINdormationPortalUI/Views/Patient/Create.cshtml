@@ -1,0 +1,57 @@
+﻿@using PatientInformationPortaUI.Enums
+@model PatientInformationPortaUI.Models.PatientViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-info text-center p-1 border-dark">Add New Patient Information</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form class="form customized-bg-color g-3" asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>            
+            <div class="form-group col-12">
+                <label asp-for="PatientName" class="control-label"></label>
+                <input asp-for="PatientName" class="form-control" />
+                <span asp-validation-for="PatientName" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="DiseaseID" class="control-label"></label>
+                    <select asp-for="DiseaseID"
+                            class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Diseases,"DiseaseID", "DiseaseName"))" required>
+                    </select>
+                <span asp-validation-for="DiseaseID" class="text-danger"></span>
+                </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Epilepsy" class="control-label"></label>
+                    <select asp-for="Epilepsy" class="form-control" asp-items="Html.GetEnumSelectList<Epilepsy>()"></select>
+                <span asp-validation-for="Epilepsy" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                    <label asp-for="NCDID" class="control-label">Other NCDs</label>
+                    <select asp-for="NCDID" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.NCDs,"NCDID", "NCDName"))" required>
+                    </select>
+                </div>
+            <div class="form-group col-md-6">
+                    <label asp-for="AllergiesID" class="control-label">Allergies</label>
+                    <select asp-for="AllergiesID" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Allergies,"AllergiesID", "AllergiesName"))" required>
+                    </select>
+                </div>
+
+            <div class="form-group">
+                &nbsp;
+            </div>
+            <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-secondary" asp-action="Index">Cancel</a>                 
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+

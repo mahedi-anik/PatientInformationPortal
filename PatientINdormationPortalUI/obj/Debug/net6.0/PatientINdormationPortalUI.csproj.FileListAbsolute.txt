@@ -448,3 +448,6 @@ E:\PatientInformationPortal\PatientINdormationPortalUI\obj\Debug\net6.0\refint\P
 E:\PatientInformationPortal\PatientINdormationPortalUI\obj\Debug\net6.0\PatientINdormationPortalUI.pdb
 E:\PatientInformationPortal\PatientINdormationPortalUI\obj\Debug\net6.0\PatientINdormationPortalUI.genruntimeconfig.cache
 E:\PatientInformationPortal\PatientINdormationPortalUI\obj\Debug\net6.0\ref\PatientINdormationPortalUI.dll
+D:\PatientINdormationPortal\PatientINdormationPortalUI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\PatientINdormationPortal\PatientINdormationPortalUI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\PatientINdormationPortal\PatientINdormationPortalUI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

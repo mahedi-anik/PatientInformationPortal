@@ -3,19 +3,15 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div class="container">
-    <div class="row">
-        <div class="col-8 offset-2">
+
         <h1 class="text-info text-center p-1 border-dark">Patient Information Portal</h1>
+        <hr />
 
     <p>
-    <!--<a asp-action="Create">Create New</a>-->
-    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addPatient" onclick="addPatient()">
-        Add New
-    </button>
-    </p>
-<table class="table table-bordered text-center" id="patientTable">
-    <thead class="bg-secondary text-light">
+    <a class="btn btn-info" asp-action="Create">Create New</a>
+    
+<table class="table text-center" id="patientTable">
+    <thead>
         <tr>
             <th>
                 PatientName
@@ -33,9 +29,6 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.PatientID)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.PatientName)
             </td>
             <td>
@@ -45,26 +38,11 @@
                 @Html.DisplayFor(modelItem => item.Epilepsy)
             </td>
             <td>
-                <a class="btn btn-primary" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Edit</a>
-                <a class="btn btn-warning" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Details</a>
-                <a class="btn btn-danger" asp-action="" asp-controller="Patient" asp-route-id="@item.PatientID">Delete</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-controller="Patient" asp-route-id="@item.PatientID">Edit</a> |
+                <a class="btn btn-warning" asp-action="Details" asp-controller="Patient" asp-route-id="@item.PatientID">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-controller="Patient" asp-route-id="@item.PatientID">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
-    </div>
-    </div>
-</div>
-<script>
-    function addPatient(){
-        $.ajax({
-            type:"Get",
-            url: "/Patient/Create",
-            success: function (result) {
-                $("#patientTable").html(result);
-                $("#addPatient").modal('show');
-            }
-        })
-    }
-</script>

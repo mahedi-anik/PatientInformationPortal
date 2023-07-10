@@ -16,7 +16,7 @@ namespace PatientInformationPortalAPI.Controllers
         {
             _unitOfWork = unitOfWork;
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> GetAllAllergiesDetails()
         {

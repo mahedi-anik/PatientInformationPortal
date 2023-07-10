@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PatientINdormationPortalUI
 build_property.RootNamespace = PatientINdormationPortalUI
-build_property.ProjectDir = E:\PatientInformationPortal\PatientINdormationPortalUI\
+build_property.ProjectDir = D:\PatientINdormationPortal\PatientINdormationPortalUI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\PatientInformationPortal\PatientINdormationPortalUI
+build_property.MSBuildProjectDirectory = D:\PatientINdormationPortal\PatientINdormationPortalUI
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Home/Index.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Home/Privacy.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Patient/Index.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Patient/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Patient/_AddPatientPartialView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxfQWRkUGF0aWVudFBhcnRpYWxWaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Shared/Error.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/_ViewImports.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/_ViewStart.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/PatientInformationPortal/PatientINdormationPortalUI/Views/Shared/_Layout.cshtml]
+[D:/PatientINdormationPortal/PatientINdormationPortalUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-okq4lrjywk

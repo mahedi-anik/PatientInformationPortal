@@ -1,7 +1,18 @@
+using PatientINdormationPortalUI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+builder.Services.AddMvc();
+builder.Services.AddTransient<IService, Service>();
+builder.Services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.WriteIndented = true;
+            });
+
 
 var app = builder.Build();
 
